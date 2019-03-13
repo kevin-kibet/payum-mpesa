@@ -1,6 +1,6 @@
 {
-  "name": "payum/payum-mpesa",
-  "type": "project",
+  "name": "kevin-kibet/payum-mpesa",
+  "type": "library",
   "description": "The Payum extension. It provides MPesa payment integration.",
   "keywords": [
     "payment",

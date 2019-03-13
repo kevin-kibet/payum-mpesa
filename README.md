@@ -12,7 +12,7 @@ Payum is an MIT-licensed open source project with its ongoing development made p
 ## Installation
 
 ```bash
-$ composer require payum/payum payum/mpesa
+$ composer require payum/payum kevin-kibet/payum-mpesa
 ```
 
 ## Resources
