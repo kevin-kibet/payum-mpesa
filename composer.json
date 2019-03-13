@@ -1,41 +1,53 @@
 {
-    "name": "payum/skeleton",
-    "type": "project",
-    "description": "The Payum extension. Rapid extensino development",
-    "keywords": ["payment"],
-    "homepage": "https://payum.forma-pro.com",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Kotlyar Maksim",
-            "email": "kotlyar.maksim@gmail.com"
-        },
-        {
-            "name":     "Payum project",
-            "homepage": "https://payum.forma-pro.com/"
-        },
-        {
-            "name":     "Community contributions",
-            "homepage": "https://github.com/Payum/AuthorizeNetAim/contributors"
-        }
-    ],
-    "require": {
-        "payum/core": "^1.5"
+  "name": "payum/payum-mpesa",
+  "type": "project",
+  "description": "The Payum extension. It provides MPesa payment integration.",
+  "keywords": [
+    "payment",
+    "mpesa"
+  ],
+  "homepage": "https://payum.forma-pro.com",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kevin Kibet",
+      "email": "kevynkybet@gmail.com"
     },
-    "require-dev": {
-        "payum/core": "^1.5",
-        "php-http/guzzle6-adapter": "^1.0"
+    {
+      "name": "Kotlyar Maksim",
+      "email": "kotlyar.maksim@gmail.com"
     },
-    "config": {
-        "bin-dir": "bin"
+    {
+      "name": "Payum project",
+      "homepage": "https://payum.forma-pro.com/"
     },
-    "autoload": {
-        "psr-0": { "Payum\\Mpesa": "" }
-    },
-    "target-dir": "Payum/Mpesa",
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.5-dev"
-        }
+    {
+      "name": "Community contributions",
+      "homepage": "https://github.com/Payum/AuthorizeNetAim/contributors"
     }
+  ],
+  "require": {
+    "payum/core": "^1.5",
+    "safaricom/mpesa": "^1.0",
+    "ext-curl": "*",
+    "ext-json": "*"
+  },
+  "require-dev": {
+    "payum/core": "^1.5",
+    "php-http/guzzle6-adapter": "^1.0"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-0": {
+      "Payum\\Mpesa": ""
+    }
+  },
+  "target-dir": "Payum/Mpesa",
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.5-dev"
+    }
+  }
 }
