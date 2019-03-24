@@ -2,11 +2,11 @@
 
 namespace Payum\Mpesa;
 
-use Action\RegisterUrlAction;
 use Payum\Mpesa\Action\AuthorizeAction;
 use Payum\Mpesa\Action\CancelAction;
 use Payum\Mpesa\Action\ConvertPaymentAction;
 use Payum\Mpesa\Action\CaptureAction;
+use Payum\Mpesa\Action\InitializeAction;
 use Payum\Mpesa\Action\NotifyAction;
 use Payum\Mpesa\Action\RefundAction;
 use Payum\Mpesa\Action\StatusAction;
@@ -24,7 +24,7 @@ class MPesaGatewayFactory extends GatewayFactory
             'payum.factory_name' => 'mpesa',
             'payum.factory_title' => 'Mpesa',
 
-            'payum.action.register_url' => new RegisterUrlAction(),
+            'payum.action.init' => new InitializeAction(),
             'payum.action.capture' => new CaptureAction(),
             'payum.action.authorize' => new AuthorizeAction(),
             'payum.action.refund' => new RefundAction(),

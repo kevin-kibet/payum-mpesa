@@ -6,8 +6,7 @@
  * Time: 1:53 AM
  */
 
-namespace Action;
-
+namespace Payum\Mpesa\Action;
 
 use Payum\Core\Action\ActionInterface;
 use Payum\Core\ApiAwareInterface;
@@ -17,7 +16,7 @@ use Payum\Core\GatewayAwareInterface;
 use Payum\Core\GatewayAwareTrait;
 use Request\Api\RegisterUrl;
 
-class RegisterUrlAction implements ActionInterface, GatewayAwareInterface, ApiAwareInterface
+class InitializeAction implements ActionInterface, GatewayAwareInterface, ApiAwareInterface
 {
     use GatewayAwareTrait, ApiAwareTrait;
 
@@ -29,7 +28,7 @@ class RegisterUrlAction implements ActionInterface, GatewayAwareInterface, ApiAw
     public function execute($request)
     {
         RequestNotSupportedException::assertSupports($this, $request);
-        // Probably Before each request
+        // Will be call to make the gateway ready
 
     }
 
